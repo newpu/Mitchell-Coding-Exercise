@@ -1,0 +1,4 @@
+{
+
+  "Data" : { "ClaimContextConnection" : "Server=(localdb)\\Projects;Database=ClaimDB;Trusted_Connection=;MultipleActiveResultSets=true;" }
+}
