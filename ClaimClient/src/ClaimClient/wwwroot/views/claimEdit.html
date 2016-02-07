@@ -1,0 +1,45 @@
+﻿
+<div class="panel panel-primary" ng-controller="claimEditCtrl as vm">
+    <a href="#/" class="btn btn-sm btn-default"><i class="fa fa-angle-left"></i>Back</a>
+    <div class="panel-heading" style="font-size:large">Edit Claim</div>
+    <div class="alert alert-danger" ng-show="vm.errorMessage">{{vm.errorMessage}}</div>
+    <div ng-show="vm.isBusy" class="text-center"><i class="fa fa-spinner fa-spin"></i>Loading...</div>
+
+    <div class="panel-body">
+
+         <div class="col-md-4 col-md-offset-1">
+            <h4>Claim Number: {{vm.claimNumber}}</h4>
+            <form novalidate name="updateClaimForm" ng-submit="vm.updateClaim()">
+                <div class="form-group">
+                    <label for="claimNumber">Claim Number</label>
+                    <input class="form-control" type="text" id="claimNumber" name="claimNumber" ng-model="vm.updatedClaim.ClaimNumber" required />
+                    <span ng-show="updateClaimForm.claimNumber.$error.required" class="text-warning">Claim Number is required</span>
+                </div>
+                <div class="form-group">
+                    <label for="assignedAdjusterId">Claimant First Name</label>
+                    <input class="form-control" type="text" id="firstName" name="firstName" ng-model="vm.updatedClaim.ClaimantFirstName" />
+                </div>
+                <div class="form-group">
+                    <label for="assignedAdjusterId">Claimant Last Name</label>
+                    <input class="form-control" type="text" id="lastName" name="lastName" ng-model="vm.updatedClaim.ClaimantLastName" />
+                </div>
+                <div class="form-group">
+                    <label for="assignedAdjusterId">Assigned Adjuster ID</label>
+                    <input class="form-control" type="text" id="assignedAdjusterId" name="assignedAdjusterId" ng-model="vm.updatedClaim.AssignedAdjusterID" />
+                </div>
+                <div class="form-group">
+                    <label for="exteriorColor">Exterior Color</label>
+                    <input class="form-control" type="text" id="exteriorColor" name="exteriorColor" ng-model="vm.updatedClaim.Vehicles[0].ExteriorColor" />
+                </div>
+                <div class="form-group">
+                    <label for="licPlateExpDate">Lic Plate Expire Date</label>
+                    <input class="form-control"  type="date" id="licPlateExpDate" name="licPlateExpDate" ng-model="vm.updatedClaim.Vehicles[0].LicPlateExpDate" required />
+                    <span ng-show="updateClaimForm.licPlateExpDate.$error.required" class="text-warning">lic Plate Expire Date is required</span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Update Claim" class="btn btn-sm btn-success" ng-disabled="updateClaimForm.$invalid" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

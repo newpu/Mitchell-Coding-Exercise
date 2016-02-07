@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@section Scripts {
+    <script src="~/lib/angular/angular.min.js"></script>
+    <script src="~/lib/angular-route/angular-route.min.js"></script>
+    <script src="~/js/app-claim.js"></script>
+    <script src="~/js/claimctrl.js"></script>
+    <script src="~/js/claimeditctrl.js"></script>
+}
+
+<div class="row" ng-app="claimClient">
+
+    <div ng-view></div>
+
+</div>

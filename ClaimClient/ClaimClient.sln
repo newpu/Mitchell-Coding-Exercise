@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{EF26E1E2-D32F-499A-B3A0-D8F999F9CD12}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E50C67F2-1A29-441C-B177-030FED69E547}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ClaimClient", "src\ClaimClient\ClaimClient.xproj", "{EA748670-0CFF-4D33-B5F9-010E51A22761}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA748670-0CFF-4D33-B5F9-010E51A22761}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA748670-0CFF-4D33-B5F9-010E51A22761}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA748670-0CFF-4D33-B5F9-010E51A22761}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA748670-0CFF-4D33-B5F9-010E51A22761}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EA748670-0CFF-4D33-B5F9-010E51A22761} = {EF26E1E2-D32F-499A-B3A0-D8F999F9CD12}
+	EndGlobalSection
+EndGlobal
